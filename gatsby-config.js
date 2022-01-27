@@ -72,8 +72,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `victor mao's gatsby website using minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `victor mao's gatsby website`,
+        name: `Victor Mao's Gatsby Website Using minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
+        short_name: `Victor Mao's Gatsby Website`,
         description: `Victor Mao's Gatsby Website using the Minimal Blog Gatsby Theme from @lekoarts. Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
         start_url: `/`,
         background_color: `#fff`,
@@ -81,18 +81,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#6B46C1`,
         display: `standalone`,
-        icons: [
-          {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-        ],
+        icons: [],
       },
     },
     {
