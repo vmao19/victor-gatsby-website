@@ -13,7 +13,6 @@ module.exports = {
     siteUrl: `https://victormao.com`,
     siteDescription: `Victor Mao's Gatsby Website using the Minimal Blog Gatsby Theme from @lekoarts. Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
     siteLanguage: `en`,
-    siteImage: `/banner.jpg`,
     author: `Victor Mao`,
   },
   plugins: [
@@ -21,6 +20,7 @@ module.exports = {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
       options: {
+        formatString: 'MM.DD.YYYY',
         navigation: [
           {
             title: `About`,
@@ -28,7 +28,7 @@ module.exports = {
           },
           {
             title: `Projects`,
-            slug: `/projects`,
+            slug: `/tags/projects`,
           },
           {
             title: `Blog`,

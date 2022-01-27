@@ -5913,10 +5913,10 @@
     "yoga-layout-prebuilt" "^1.10.0"
     "yurnalist" "^2.1.0"
 
-"gatsby-core-utils@^3.4.0", "gatsby-core-utils@^3.5.2":
-  "integrity" "sha512-sY7BD6VlbWwrV892x9/yJPtXYaGC/GLyhabd9j2xP6zsIOW0XBHXZ4jJ+xEPaRn3CJxYgBd8KdCyoc4h1ZEFzg=="
-  "resolved" "https://registry.npmjs.org/gatsby-core-utils/-/gatsby-core-utils-3.5.2.tgz"
-  "version" "3.5.2"
+"gatsby-core-utils@^3.4.0", "gatsby-core-utils@^3.5.2", "gatsby-core-utils@^3.6.0":
+  "integrity" "sha512-xmjtOWQfLinNbgBiDRT1KpEfDZm0Z0u6+hsf8EH8Ps5UCIhKinGrdtK+QH+RzPGCV1PUg/E/pnLVqQLCvD+tmA=="
+  "resolved" "https://registry.npmjs.org/gatsby-core-utils/-/gatsby-core-utils-3.6.0.tgz"
+  "version" "3.6.0"
   dependencies:
     "@babel/runtime" "^7.15.4"
     "ci-info" "2.0.0"
@@ -6264,16 +6264,16 @@
     "unist-util-visit-parents" "^3.1.1"
 
 "gatsby-source-filesystem@^4.0.0-next", "gatsby-source-filesystem@^4.4.0":
-  "integrity" "sha512-tN+aJdOnBf92V9oHXaGzPB6gL0EhpYH0mh/dfszroy25CtSq07fZu8SynS/B3ClJVi22MkD0imcDVMlPJGSQ3w=="
-  "resolved" "https://registry.npmjs.org/gatsby-source-filesystem/-/gatsby-source-filesystem-4.4.0.tgz"
-  "version" "4.4.0"
+  "integrity" "sha512-Ve6VfFJ4moTX7n8uDTGF7K07HdjWkWW7c9Bn1etcS2QcFRRMj/lxQ/2EFpgVM20jtZ60IG1vqnAzDabqz7UxXQ=="
+  "resolved" "https://registry.npmjs.org/gatsby-source-filesystem/-/gatsby-source-filesystem-4.6.0.tgz"
+  "version" "4.6.0"
   dependencies:
     "@babel/runtime" "^7.15.4"
     "chokidar" "^3.5.2"
     "fastq" "^1.13.0"
     "file-type" "^16.5.3"
     "fs-extra" "^10.0.0"
-    "gatsby-core-utils" "^3.4.0"
+    "gatsby-core-utils" "^3.6.0"
     "got" "^9.6.0"
     "md5-file" "^5.0.0"
     "mime" "^2.5.2"

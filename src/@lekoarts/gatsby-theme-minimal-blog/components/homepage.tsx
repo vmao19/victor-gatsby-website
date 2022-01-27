@@ -32,7 +32,7 @@ type PostsProps = {
 }
 
 const Homepage = ({ posts }: PostsProps) => {
-  const { basePath, blogPath } = useMinimalBlogConfig()
+  const { basePath, blogPath, tagsPath } = useMinimalBlogConfig()
   const { siteTitle } = useSiteMetadata()
 
   return (
@@ -44,14 +44,18 @@ const Homepage = ({ posts }: PostsProps) => {
       </section>
 
       <Title text="Latest Projects">
-        <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>View all projects</Link>
+        <Link to={replaceSlashes(`/${basePath}/${tagsPath}/projects`)}>View all projects</Link>
       </Title>
-      <Listing posts={posts} showTags={false} />
+      <Listing posts={posts.filter((p) => {
+          return p.tags?.map(x => x.name).includes('Projects');
+      })} showTags={true} />
 
       <Title text="Latest Posts">
         <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>Read all posts</Link>
       </Title>
-      <Listing posts={posts} showTags={false} />
+      <Listing posts={posts.filter((p) => {
+          return p.tags?.map(x => x.name).includes('Posts');
+      })} showTags={true} />
       
       <List>
         <Bottom />
