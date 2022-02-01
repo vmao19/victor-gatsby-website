@@ -3,7 +3,6 @@ require(`dotenv`).config()
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
-  pathPrefix: "/victor-gatsby-website",
   siteMetadata: {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
@@ -14,7 +13,6 @@ module.exports = {
     siteUrl: `https://victormao.com`,
     siteDescription: `Victor Mao's Gatsby Website using the Minimal Blog Gatsby Theme from @lekoarts. Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
     siteLanguage: `en`,
-    siteImage: `/banner.jpg`,
     author: `Victor Mao`,
   },
   plugins: [
@@ -22,6 +20,7 @@ module.exports = {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
       options: {
+        formatString: 'MM.DD.YYYY',
         navigation: [
           {
             title: `About`,
@@ -29,7 +28,7 @@ module.exports = {
           },
           {
             title: `Projects`,
-            slug: `/projects`,
+            slug: `/tags/projects`,
           },
           {
             title: `Blog`,
@@ -73,8 +72,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `victor mao's gatsby website using minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `victor mao's gatsby website`,
+        name: `Victor Mao's Gatsby Website Using minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
+        short_name: `Victor Mao's Gatsby Website`,
         description: `Victor Mao's Gatsby Website using the Minimal Blog Gatsby Theme from @lekoarts. Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
         start_url: `/`,
         background_color: `#fff`,
@@ -82,18 +81,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#6B46C1`,
         display: `standalone`,
-        icons: [
-          {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-        ],
+        icons: [],
       },
     },
     {
